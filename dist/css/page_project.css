@@ -1,0 +1,29 @@
+.section {
+  margin: 0 auto;
+}
+.section .work {
+  width: 50%;
+  height: 250px;
+  float: left;
+}
+.section .work_list {
+  width: 80%;
+  height: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 5px #bd8cdc;
+  transition: 1s;
+}
+.section .work_list h2 {
+  line-height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+.section .work_list p {
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.work:hover .work_list {
+  box-shadow: 8px 8px 32px #bd8cdc;
+}

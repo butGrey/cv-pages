@@ -1,0 +1,237 @@
+h1 {
+  font-size: 3em;
+  margin: 0 0 1em 0;
+  text-align: center;
+  color: #EEEEE0;
+  text-shadow: 0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
+  font-family: helvetica,arial,sans-serif;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0 0 0.5em 0;
+  text-align: center;
+  color: #EEEEE0;
+  text-shadow: 0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
+  font-family: helvetica,arial,sans-serif;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.2em 0;
+  text-align: center;
+  color: #EEEEE0;
+  text-shadow: 0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
+  font-family: helvetica,arial,sans-serif;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 0 0 0.1em 0;
+  text-align: center;
+  color: #EEEEE0;
+  text-shadow: 0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
+  font-family: helvetica,arial,sans-serif;
+}
+
+p, li, a {
+  color: #676767;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section {
+  background-color: #EEEEE0;
+}
+
+.lang-panel {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 5px;
+  z-index: 100;
+  font-size: 10px;
+}
+.lang-panel .lang {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 2px 8px;
+}
+.lang-panel .lang.selected {
+  background-color: #727a73c7;
+  color: #4c524d;
+  cursor: default;
+}
+
+.box {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 50%;
+}
+.box_img, .box_text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.box_img:after, .box_text:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border: solid 10px;
+  border-color: #D4D4D4 #D4D4D4 #d2c0dc #d2c0dc;
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  transition: 2s;
+}
+.box_img img, .box_text img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.box_text {
+  line-height: 15rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 2s;
+}
+
+h3 {
+  color: #fff;
+  width: 0;
+  transition: 1s;
+}
+
+.box:hover .box_img:after, .box:hover .box_text:after {
+  transform: rotate(270deg);
+}
+
+.box:hover .box_text {
+  opacity: 1;
+}
+
+.box:hover h3 {
+  width: 100%;
+}
+
+.info {
+  text-align: center;
+}
+
+.section {
+  margin: 0 auto;
+}
+.section .work {
+  width: 50%;
+  height: 250px;
+  float: left;
+}
+.section .work_list {
+  width: 80%;
+  height: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 5px #bd8cdc;
+  transition: 1s;
+}
+.section .work_list h2 {
+  line-height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+.section .work_list p {
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.work:hover .work_list {
+  box-shadow: 8px 8px 32px #bd8cdc;
+}
+
+.skill_items {
+  height: 50%;
+  text-align: center;
+  margin: 0 2rem;
+  padding-top: 2rem;
+}
+.skill_items li {
+  display: inline-block;
+  width: 5rem;
+  line-height: 5rem;
+  margin: .1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transform-origin: center -10rem;
+  transform: rotate(-6deg);
+  animation: mymove 3s infinite alternate ease-in-out;
+  -webkit-animation: mymove 3s infinite alternate ease-in-out;
+  /*Safari and Chrome*/
+  box-shadow: 5px 5px 25px #bd8cdc;
+}
+.skill_items .big {
+  width: 7rem;
+  height: 7rem;
+  line-height: 7rem;
+}
+@-webkit-keyframes mymove {
+  to {
+    transform: rotate(6deg);
+  }
+}
+@keyframes mymove {
+  to {
+    transform: rotate(6deg);
+  }
+}
+.about {
+  text-align: center;
+  margin: 1rem 2rem;
+}
+.about li {
+  display: inline-block;
+  margin: 1rem 2rem;
+}
+.about li p {
+  font-size: 2.5rem;
+}
+
+.intrdc {
+  width: 20rem;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 1px 1px 5px #bd8cdc;
+  transition: 1s;
+}
+.intrdc li {
+  position: relative;
+  margin-bottom: .5rem;
+  padding-bottom: .2rem;
+  border-bottom: 1px dashed #d2c0dc;
+}
+.intrdc li:before {
+  position: absolute;
+  top: .8em;
+  left: -1.4rem;
+  content: '';
+  border-radius: 50%;
+  border: solid 6px;
+  border-color: #D4D4D4 #D4D4D4 #d2c0dc #d2c0dc;
+}
+
+.intrdc:hover {
+  box-shadow: 8px 8px 32px #bd8cdc;
+}

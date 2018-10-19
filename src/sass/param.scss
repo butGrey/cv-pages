@@ -1,0 +1,51 @@
+//color
+$col-dark: #676767;
+$col-light: #4c524d;
+$col-purple: #d2c0dc;
+$col-pp: rgba(210,192,220,.5);
+
+//font
+$ft-wryh: 'punctuation,PingFangSC-Regular,"Microsoft YaHei","微软雅黑"';
+$ft-size: 2.5em, 1em, .5em;
+$ft-sz-def:  1.1em;
+$ft-sz-sm:   1em;
+$ft-sz-smer: 0.8em;
+
+$ft-sz: 3em, 1.5em, 1.2em, 1em;
+$ft-mg: 1em, 0.5em, 0.2em, 0.1em;
+
+@for $i from 1 through 4 {
+    h#{$i} { 
+        font-size: nth($ft-sz, $i);
+        margin: 0 0 nth($ft-mg, $i) 0;
+        text-align: center;
+        color: #EEEEE0;
+        text-shadow:0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
+  		font-family: helvetica,arial,sans-serif;	 	
+    }
+}
+p,li,a{
+	color: $col-dark;
+}
+a{ 
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

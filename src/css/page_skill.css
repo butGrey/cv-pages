@@ -1,0 +1,35 @@
+.skill_items {
+  height: 50%;
+  text-align: center;
+  margin: 0 2rem;
+  padding-top: 2rem;
+}
+.skill_items li {
+  display: inline-block;
+  width: 5rem;
+  line-height: 5rem;
+  margin: .1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transform-origin: center -10rem;
+  transform: rotate(-6deg);
+  animation: mymove 3s infinite alternate ease-in-out;
+  -webkit-animation: mymove 3s infinite alternate ease-in-out;
+  /*Safari and Chrome*/
+  box-shadow: 5px 5px 25px #bd8cdc;
+}
+.skill_items .big {
+  width: 7rem;
+  height: 7rem;
+  line-height: 7rem;
+}
+@-webkit-keyframes mymove {
+  to {
+    transform: rotate(6deg);
+  }
+}
+@keyframes mymove {
+  to {
+    transform: rotate(6deg);
+  }
+}
