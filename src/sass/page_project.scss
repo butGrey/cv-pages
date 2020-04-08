@@ -1,9 +1,12 @@
-
 .section{
 	margin: 0 auto;
 	.work{
-		width: 50%;
-		height: 250px;
+		width: 25%;
+		height: 50vh;
+		@media screen and (max-width: 768px){
+			width: 50%;
+			height: 60vh;
+		}
 		float: left;
 		&_list{
 			width: 80%;
@@ -22,6 +25,17 @@
 				line-height: 1.5rem;
 			}
 		}
+	}
+	.work1{
+		@media screen and (max-width: 768px){
+			display: none;
+		}
+	}
+	.workWidth{
+		width: 50%;
+	}
+	.companyWidth{
+		width: 33%;
 	}
 }
 .work:hover .work_list{

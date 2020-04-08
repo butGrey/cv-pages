@@ -2,7 +2,7 @@ h1 {
   font-size: 3em;
   margin: 0 0 1em 0;
   text-align: center;
-  color: #EEEEE0;
+  color: #ececec;
   text-shadow: 0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
   font-family: helvetica,arial,sans-serif;
 }
@@ -11,7 +11,7 @@ h2 {
   font-size: 1.5em;
   margin: 0 0 0.5em 0;
   text-align: center;
-  color: #EEEEE0;
+  color: #ececec;
   text-shadow: 0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
   font-family: helvetica,arial,sans-serif;
 }
@@ -20,7 +20,7 @@ h3 {
   font-size: 1.2em;
   margin: 0 0 0.2em 0;
   text-align: center;
-  color: #EEEEE0;
+  color: #ececec;
   text-shadow: 0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
   font-family: helvetica,arial,sans-serif;
 }
@@ -29,7 +29,7 @@ h4 {
   font-size: 1em;
   margin: 0 0 0.1em 0;
   text-align: center;
-  color: #EEEEE0;
+  color: #ececec;
   text-shadow: 0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
   font-family: helvetica,arial,sans-serif;
 }
@@ -49,7 +49,7 @@ a {
 }
 
 .section {
-  background-color: #EEEEE0;
+  background-color: #ececec;
 }
 
 .lang-panel {
@@ -136,9 +136,15 @@ h3 {
   margin: 0 auto;
 }
 .section .work {
-  width: 50%;
-  height: 250px;
+  width: 25%;
+  height: 50vh;
   float: left;
+}
+@media screen and (max-width: 768px) {
+  .section .work {
+    width: 50%;
+    height: 60vh;
+  }
 }
 .section .work_list {
   width: 80%;
@@ -156,6 +162,17 @@ h3 {
 .section .work_list p {
   text-align: left;
   line-height: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .section .work1 {
+    display: none;
+  }
+}
+.section .workWidth {
+  width: 50%;
+}
+.section .companyWidth {
+  width: 33%;
 }
 
 .work:hover .work_list {

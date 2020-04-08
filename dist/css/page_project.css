@@ -2,9 +2,15 @@
   margin: 0 auto;
 }
 .section .work {
-  width: 50%;
-  height: 250px;
+  width: 25%;
+  height: 50vh;
   float: left;
+}
+@media screen and (max-width: 768px) {
+  .section .work {
+    width: 50%;
+    height: 60vh;
+  }
 }
 .section .work_list {
   width: 80%;
@@ -22,6 +28,17 @@
 .section .work_list p {
   text-align: left;
   line-height: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .section .work1 {
+    display: none;
+  }
+}
+.section .workWidth {
+  width: 50%;
+}
+.section .companyWidth {
+  width: 33%;
 }
 
 .work:hover .work_list {
