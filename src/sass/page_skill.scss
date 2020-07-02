@@ -8,12 +8,16 @@ $mymove: mymove;
      to {transform: rotate($offset);}
   }
 }
-.skill_items{	
+.skill_items{
     height: 50%;
   	text-align: center;
     margin: 0 2rem;
   	padding-top: 2rem;
-  	li{	
+    @media screen and (max-width: 768px){
+      height: 80%;
+      padding-top: 0;
+    }
+  	li{
   		display: inline-block;
   		width: 5rem;
   		line-height: 5rem;
@@ -31,5 +35,5 @@ $mymove: mymove;
     	height: 7rem;
     	line-height: 7rem;
     }
-    @include keyframes(mymove,$offset);	
+    @include keyframes(mymove,$offset);
 }

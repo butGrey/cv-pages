@@ -1,13 +1,13 @@
-h1 {
+.h1 {
   font-size: 3em;
-  margin: 0 0 1em 0;
+  margin: 0 0 0.7em 0;
   text-align: center;
   color: #ececec;
   text-shadow: 0 0 0.2em #6b6b6b,-0 -0 0.1em #6b6b6b;
   font-family: helvetica,arial,sans-serif;
 }
 
-h2 {
+.h2 {
   font-size: 1.5em;
   margin: 0 0 0.5em 0;
   text-align: center;
@@ -16,7 +16,7 @@ h2 {
   font-family: helvetica,arial,sans-serif;
 }
 
-h3 {
+.h3 {
   font-size: 1.2em;
   margin: 0 0 0.2em 0;
   text-align: center;
@@ -25,7 +25,7 @@ h3 {
   font-family: helvetica,arial,sans-serif;
 }
 
-h4 {
+.h4 {
   font-size: 1em;
   margin: 0 0 0.1em 0;
   text-align: center;
@@ -69,6 +69,12 @@ a {
   background-color: #727a73c7;
   color: #4c524d;
   cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: .8rem;
+  }
 }
 
 .box {
@@ -142,8 +148,8 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .section .work {
-    width: 50%;
-    height: 60vh;
+    width: 100% !important;
+    height: 44.5vh;
   }
 }
 .section .work_list {
@@ -155,7 +161,7 @@ h3 {
   box-shadow: 1px 1px 5px #bd8cdc;
   transition: 1s;
 }
-.section .work_list h2 {
+.section .work_list .h2 {
   line-height: 3rem;
   border-bottom: 1px solid #ccc;
 }
@@ -174,6 +180,9 @@ h3 {
 .section .companyWidth {
   width: 33%;
 }
+.section .companyWidth .date {
+  font-size: 1rem;
+}
 
 .work:hover .work_list {
   box-shadow: 8px 8px 32px #bd8cdc;
@@ -184,6 +193,12 @@ h3 {
   text-align: center;
   margin: 0 2rem;
   padding-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .skill_items {
+    height: 80%;
+    padding-top: 0;
+  }
 }
 .skill_items li {
   display: inline-block;

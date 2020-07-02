@@ -8,8 +8,8 @@
 }
 @media screen and (max-width: 768px) {
   .section .work {
-    width: 50%;
-    height: 60vh;
+    width: 100% !important;
+    height: 44.5vh;
   }
 }
 .section .work_list {
@@ -21,7 +21,7 @@
   box-shadow: 1px 1px 5px #bd8cdc;
   transition: 1s;
 }
-.section .work_list h2 {
+.section .work_list .h2 {
   line-height: 3rem;
   border-bottom: 1px solid #ccc;
 }
@@ -39,6 +39,9 @@
 }
 .section .companyWidth {
   width: 33%;
+}
+.section .companyWidth .date {
+  font-size: 1rem;
 }
 
 .work:hover .work_list {
